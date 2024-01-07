@@ -10,6 +10,9 @@ $(call inherit-product, device/xiaomi/mt6833-common/mt6833.mk)
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/everpal/everpal-vendor.mk)
 
+# Inherit the viper4
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayEverpal \
