@@ -18,6 +18,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@1.0.vendor:64
 
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc-service.st
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayEverpal \
@@ -33,7 +37,8 @@ PRODUCT_COPY_FILES += \
 # Rootdir
 PRODUCT_PACKAGES += \
     init.batterysecret.rc \
-    init.mt6833.rc
+    init.mt6833.rc \
+    init.stnfc.rc
 
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
