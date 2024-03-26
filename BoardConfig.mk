@@ -13,6 +13,15 @@ TARGET_OTA_ASSERT_DEVICE := evergo,evergreen,everpal,opal
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_everpal
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_everpal
 
+# NFC
+ODM_MANIFEST_SKUS += nonfc
+
+ODM_MANIFEST_NFC_FILES += \
+    hardware/interfaces/compatibility_matrices/manifest.empty.xml
+
+ODM_MANIFEST_NONFC_FILES += \
+    $(DEVICE_PATH)/configs/vintf/manifest_nonfc.xml
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
 

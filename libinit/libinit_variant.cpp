@@ -57,12 +57,15 @@ void set_variant_props(const variant_info_t variant) {
     // Set product cert & system model
     if (variant.bid_value == "S98016AA1") {
         property_override(PRODC_PROP, "21091116AI");
+        property_override(SKU_PROP, "nonfc");
     }
     if (variant.bid_value == "S98016BA1") {
         property_override(PRODC_PROP, "21091116AI");
+        property_override(SKU_PROP, "nonfc");
     }
     if (variant.bid_value == "S98016LA1") {
         property_override(PRODC_PROP, "22031116AI");
+        property_override(SKU_PROP, "nonfc");
     }
     if (variant.bid_value == "S98017AA1") {
         property_override(PRODC_PROP, "21091116AG");
